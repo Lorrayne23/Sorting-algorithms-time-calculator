@@ -8,7 +8,7 @@ for size in vectorSizes:
 
     for _ in range(50):
         print(str(size))
-        aleatoryVector = [random.randint(1, 100) for _ in range(62500)]
+        aleatoryVector = [random.randint(1, 100) for _ in range(size)]
         #print(aleatoryVector)
         print("----------------------------------------")
 
