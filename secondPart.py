@@ -1,4 +1,4 @@
-from quicksort import QuickSort  # Import the QuickSort class from your module
+from quicksort import QuickSort
 import random
 import time
 
@@ -25,7 +25,6 @@ class QuicksortComparison:
         ordered_vector = list(range(0, 10000))
         self.quickSortExecution(ordered_vector)
 
-# Example usage:
 comparison = QuicksortComparison()
 print("Aleatory Vector")
 comparison.aleatoryVector()

@@ -1,16 +1,15 @@
 class MergeSort:
     def sort(self, arr):
         if len(arr) > 1:
-            mid = len(arr) // 2  # Encontra o ponto médio do vetor
-            left_half = arr[:mid]  # Divide o vetor em duas metades
+            mid = len(arr) // 2
+            left_half = arr[:mid]
             right_half = arr[mid:]
 
-            self.sort(left_half)  # Ordena a metade esquerda
-            self.sort(right_half)  # Ordena a metade direita
+            self.sort(left_half)
+            self.sort(right_half)
 
             i = j = k = 0
 
-            # Combina as duas metades ordenadas
             while i < len(left_half) and j < len(right_half):
                 if left_half[i] < right_half[j]:
                     arr[k] = left_half[i]
@@ -30,4 +29,4 @@ class MergeSort:
                 j += 1
                 k += 1
 
-        return arr  # Return the sorted array directly
+        return arr
